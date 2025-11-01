@@ -306,7 +306,7 @@
         <div style="display:flex; align-items:center; gap:12px; justify-content:center; flex-direction:column;">
           <div class="main-text" id="okText">Really? 😍 I'm so happy to know you're okay, Jaana!</div>
           <div class="sub-text">But if you feel pain later… just tap the screen, okay? 💗</div>
-          <div class="gif"><img src="assets/bear_dance.gif" alt="dancing bear" onerror="this.style.visibility='hidden'"></div>
+          <div class="gif"><img src="images/bear_dance.gif" alt="dancing bear" onerror="this.style.visibility='hidden'"></div>
         </div>
       </div>
 
@@ -315,7 +315,7 @@
         <div style="display:flex;align-items:center;gap:14px;flex-direction:column;">
           <div class="main-text" id="painText" style="font-size:26px;">It's okay, Jaana 💞</div>
           <div class="sub-text">I wish I could hug you tight right now 🤗🧸</div>
-          <div class="gif"><img src="assets/bear_hug.gif" alt="hugging bear" onerror="this.style.visibility='hidden'"></div>
+          <div class="gif"><img src="images/bear_hug.gif" alt="hugging bear" onerror="this.style.visibility='hidden'"></div>
         </div>
       </div>
 
@@ -328,7 +328,7 @@
           <div class="sub-text" id="comfortLine4">If that doesn't help, imagine our marriage and our cute daughter 💞</div>
           <div class="photo" aria-hidden="false" style="margin-top:14px;">
             <!-- Replace: assets/together_photo.jpg -->
-            <img src="assets/together_photo.jpg" alt="Photo together" onerror="this.style.visibility='hidden'">
+            <img src="images/together_photo.jpg" alt="Photo together" onerror="this.style.visibility='hidden'">
           </div>
         </div>
       </div>
@@ -341,7 +341,7 @@
             <button id="btnBetter" class="btn heartbeat">Better 💖</button>
             <button id="btnStill" class="btn ghost heartbeat">Still not 💔</button>
           </div>
-          <div class="gif"><img src="assets/bear_concern.gif" alt="concerned bear" onerror="this.style.visibility='hidden'"></div>
+          <div class="gif"><img src="images/bear_concern.gif" alt="concerned bear" onerror="this.style.visibility='hidden'"></div>
         </div>
       </div>
 
@@ -350,7 +350,7 @@
         <div style="display:flex;align-items:center;gap:12px;flex-direction:column;">
           <div class="main-text">Are you still not feeling well, Jaana? 😢💞</div>
           <div class="sub-text">Give me one more chance… I promise I'll make you feel good 💖🤗</div>
-          <div class="gif"><img src="assets/bear_tender.gif" alt="tender bear" onerror="this.style.visibility='hidden'"></div>
+          <div class="gif"><img src="images/bear_tender.gif" alt="tender bear" onerror="this.style.visibility='hidden'"></div>
         </div>
       </div>
 
@@ -363,7 +363,7 @@
               <div class="letter-line" data-text="Never forget you are my everything 💞"></div>
               <div class="letter-line" data-text="Mera jism te jaan, imaan vi tu"></div>
               <div class="letter-line" data-text="Mera Rabb, Rasool, Quran vi tu"></div>
-              <div class="letter-line" data-text="Main jaanta hu meri baatein tumhara pain nahi kr payengi…"></div>
+              <div class="letter-line" data-text="Main jaanta hu meri baatein tumhara pain nahi nahi kr payengi…"></div>
               <div class="letter-line" data-text="Par main har waqt tumhare saath hu 🧸💖"></div>
               <div class="letter-line" data-text="Agar kabhi bhi mood kharab ho, Be-jhijhak mujhe phone kr ke jo sunana hoga suna dena 💋📞"></div>
             </div>
@@ -378,7 +378,7 @@
           <div class="main-text sparkle">Okay, Jaana 💕</div>
           <div class="sub-text">Take care, eat healthy, and stay strong 🌸</div>
           <div class="sub-text">And remember — you're my forever, my heart, my peace ❤️</div>
-          <div class="gif"><img src="assets/bear_wave2.gif" alt="waving bear" onerror="this.style.visibility='hidden'"></div>
+          <div class="gif"><img src="images/bear_wave2.gif" alt="waving bear" onerror="this.style.visibility='hidden'"></div>
 
           <div style="margin-top:12px; font-size:13px; color:#6c3550;">💌 Made with endless love by Yatharth 💖</div>
 
@@ -394,7 +394,7 @@
 
 <!-- Optional background music and tap sound -->
 <audio id="bgm" loop preload="auto" src="assets/music.mp3"></audio>
-<audio id="tapSound" preload="auto" src="assets/chime.mp3"></audio>
+<audio id="tapSound" preload="auto" src="music/chime.mp3"></audio>
 
 <script>
 /* ---------------------------
@@ -406,15 +406,15 @@ const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
 /* Preload images listed in code (optional but recommended) */
 const preloadList = [
-  "assets/bear_wave.gif",
-  "assets/bear_dance.gif",
-  "assets/bear_hug.gif",
-  "assets/bear_concern.gif",
-  "assets/bear_tender.gif",
-  "assets/bear_wave2.gif",
-  "assets/together_photo.jpg",
-  "assets/music.mp3",
-  "assets/chime.mp3"
+  "images/bear_wave.gif",
+  "images/bear_dance.gif",
+  "images/bear_hug.gif",
+  "images/bear_concern.gif",
+  "images/bear_tender.gif",
+  "images/bear_wave2.gif",
+  "images/together_photo.jpg",
+  "music/music.mp3",
+  "music/chime.mp3"
 ];
 preloadList.forEach(src=>{
   if(!src) return;
@@ -627,4 +627,5 @@ window.addEventListener('load', ()=> {
 </script>
 </body>
 </html>
+
 
